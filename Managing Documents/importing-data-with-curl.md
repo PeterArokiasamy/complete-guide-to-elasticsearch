@@ -18,6 +18,8 @@ cd C:\Users\[your_username]\Desktop
 ## Importing data into local clusters
 
 ```
+#curl.exe for Windows powershell
+
 # Without CA certificate validation. This is fine for development clusters, but don't do this in production!
 curl -k -u elastic -H "Content-Type:application/x-ndjson" -XPOST https://localhost:9200/products/_bulk --data-binary "@products-bulk.json"
 
